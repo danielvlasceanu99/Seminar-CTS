@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d43230a-5841-46b5-a643-143724f8622c" name="Default Changelist" comment="Added main" />
+    <list default="true" id="8d43230a-5841-46b5-a643-143724f8622c" name="Default Changelist" comment="Added main">
+      <change afterPath="$PROJECT_DIR$/Seminar CTS 1/src/program/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar CTS 1/src/program/Giraffe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar CTS 1/src/program/Zoo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar CTS 1/src/program/Zookeeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar CTS 1/src/program/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar CTS 1/src/program/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +35,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="openjdk-15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="program" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="program.Main" />
+      <module name="Seminar CTS 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="program.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
