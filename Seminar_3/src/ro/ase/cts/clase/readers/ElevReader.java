@@ -9,28 +9,30 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ElevReader implements AplicantReadable{
-    public List<Aplicant> readAplicant(String file) throws FileNotFoundException {
-        Scanner input2 = new Scanner(new File(file));
-        input2.useDelimiter(",|\n");
+public class ElevReader extends AplicantReadable{
+    public ElevReader(String fileName) {
+        super(fileName);
+    }
+
+    public List<Aplicant> readAplicants() throws FileNotFoundException {
+        Scanner input = new Scanner(new File(super.fileName));
+        input.useDelimiter(",|\n");
         List<Aplicant> elevi = new ArrayList<Aplicant>();
 
-        while (input2.hasNext()) {
-            String nume = input2.next();
-            String prenume = input2.next();
-            int varsta = input2.nextInt();
-            int punctaj = input2.nextInt();
-            int nr = input2.nextInt();
-            String[] vect = new String[5];
-            for (int i = 0; i < nr; i++)
-                vect[i] = input2.next();
-            int clasa = input2.nextInt();
-            String tutore = input2.next();
-            Elev e = new Elev(nume, prenume, varsta, punctaj, nr, vect, clasa, tutore);
-            elevi.add(e);
+        while (input.hasNext()) {
+            Elev s = new Elev();
+            super.readAplicant(input,s);
+
+            int clasa = input.nextInt();
+            String tutore = input.next();
+
+            s.setClasa(clasa);
+            s.setTutore(tutore);
+
+            elevi.add(s);
         }
 
-        input2.close();
+        input.close();
         return elevi;
     }
 }

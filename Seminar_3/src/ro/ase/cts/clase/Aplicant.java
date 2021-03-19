@@ -1,6 +1,6 @@
 package ro.ase.cts.clase;
 
-public class Aplicant {
+public abstract class Aplicant {
     protected String nume;
     protected String prenume;
     protected int varsta;
@@ -53,14 +53,19 @@ public class Aplicant {
     public int getNr_proiecte() {
         return nr_proiecte;
     }
-    public void setNr_proiecte(int nr_proiecte) {
+    public void setDenumireProiect(String[] denumireProiect, int nr_proiecte){
+        this.denumireProiect = denumireProiect;
         this.nr_proiecte = nr_proiecte;
     }
 
-    public void statut(){
-        if(punctaj>80)
-            System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
-        else
-            System.out.println("Aplicantul "+nume+" "+prenume+" nu a fost acceptat.");
+    public void displayStateInProject(Proiect proiect){
+        StringBuilder builder = new StringBuilder();
+        builder.append("Aplicantul ").append(nume).append(prenume);
+
+        builder.append(punctaj > proiect.getPragAcceptare() ? " a fost acceptat" : " nu a fost acceptat");
+
+        System.out.println(builder);
     }
+
+    public abstract float getFinantare();
 }
