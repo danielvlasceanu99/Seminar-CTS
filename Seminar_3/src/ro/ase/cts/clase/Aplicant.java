@@ -1,6 +1,6 @@
 package ro.ase.cts.clase;
 
-public abstract class Aplicant {
+public class Aplicant {
     protected String nume;
     protected String prenume;
     protected int varsta;
