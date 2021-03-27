@@ -1,9 +1,9 @@
-package classes_Ex_4;
+package ro.ase.cts.prototype.classes;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Reteta implements AbstractPrototype{
+public class Reteta implements AbstractPrototype {
     private List<String> denumireSolutii;
     private List<Integer> cantitati;
 

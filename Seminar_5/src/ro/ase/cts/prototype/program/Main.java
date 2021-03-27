@@ -1,6 +1,6 @@
-package Program;
+package ro.ase.cts.prototype.program;
 
-import classes_Ex_4.Reteta;
+import ro.ase.cts.prototype.classes.Reteta;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         List<String> solutii = new ArrayList<>();
         solutii.add("Apa");
-        List<Integer> cantitati = new ArrayList<Integer>();
+        List<Integer> cantitati = new ArrayList<>();
         cantitati.add(12);
 
         Reteta reteta = new Reteta(solutii, cantitati);
