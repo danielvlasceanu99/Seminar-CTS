@@ -29,7 +29,7 @@ public class Sectiune implements AbstractComponent{
     @Override
     public void stergeElement(AbstractComponent abstractComponent) {
         if (abstractComponent != null){
-            listaComponente.add(abstractComponent);
+            listaComponente.remove(abstractComponent);
         }
     }
 
